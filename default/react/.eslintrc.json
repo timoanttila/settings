@@ -1,0 +1,118 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "import",
+    "prettier"
+  ],
+  "rules": {
+    "object-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "prettier/prettier": [
+      "error"
+    ],
+    "react/react-in-jsx-scope": "off",
+    "spaced-comment": [
+      "warn",
+      "always"
+    ],
+    "prefer-const": "warn",
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/semi": [
+      "error",
+      "never"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "never"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "json": "always",
+        "jsx": "always",
+        "svg": "always"
+      }
+    ],
+    "import/no-unresolved": [
+      "off",
+      {
+        "ignore": [
+          "\\?react$"
+        ]
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ]
+  },
+  "ignorePatterns": [
+    "dist",
+    ".eslintrc.json"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".svg"
+        ]
+      }
+    }
+  }
+}

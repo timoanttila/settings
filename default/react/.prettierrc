@@ -1,0 +1,34 @@
+{
+  "arrowParens": "avoid",
+  "bracketLine": false,
+  "bracketSpacing": false,
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ],
+  "pluginSearchDirs": [
+    "."
+  ],
+  "printWidth": 150,
+  "quoteProps": "as-needed",
+  "semi": false,
+  "singleAttributePerLine": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false,
+  "importOrder": [
+    "builtin",
+    "external",
+    "parent",
+    "sibling",
+    "index"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}
